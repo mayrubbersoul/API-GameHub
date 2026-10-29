@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "marjory",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/mayrubbersoul/API-GameHub/issues"
   },
