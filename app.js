@@ -12,7 +12,7 @@ import {textoValido} from "./src/utils/validacoes.js";
 import { validarId } from "./src/middlewares/validarId.js";
 import { tratarErro } from "./src/middlewares/tratarErro.js";
 import estudioRoutes from "./src/routes/estudioRoutes.js";
-import jogosRoutes from "./src/routes/jogosRoutes.js";
+import jogosRoute from "./src/routes/jogoRoutes.js";
 
 const app = express();
 const PORTA = Number(process.env.PORTA || 3000);
@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/estudios", estudioRoutes);
-app.use("/jogos", jogosRoutes);
+app.use("/jogos", jogosRoute);
 
 
 //#region jogadores
